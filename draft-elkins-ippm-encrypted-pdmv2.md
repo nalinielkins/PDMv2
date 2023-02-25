@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: TSV
-workgroup: IPPM
+area: "Transport"
+workgroup: "IP Performance Measurement"
 keyword:
  - Extension Headers
  - IPv6
@@ -18,12 +18,12 @@ keyword:
  - Performance
  - Diagnostic
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  group: "IP Performance Measurement"
+  type: "Working Group"
+  mail: "ippm@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/ippm/"
+  github: "ameyand/PDMv2"
+  latest: "https://ameyand.github.io/PDMv2/draft-elkins-ippm-encrypted-pdmv2.html"
 
 author:
  -
