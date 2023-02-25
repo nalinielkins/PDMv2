@@ -30,7 +30,6 @@ author:
     fullname: Nalini Elkins
     organization: Inside Products, Inc.
     email: "nalini.elkins@insidethestack.com"
-    
  -
     fullname: Michael Ackermann
     organization: BCBS Michigan
