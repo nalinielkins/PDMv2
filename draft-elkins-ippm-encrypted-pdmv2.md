@@ -27,9 +27,14 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: "126306167+ameyand@users.noreply.github.com"
+    fullname: Nalini Elkins
+    organization: Inside Products, Inc.
+    email: "nalini.elkins@insidethestack.com"
+    
+ -
+    fullname: Michael Ackermann
+    organization: BCBS Michigan
+    email: "mackermann@bcbsm.com"
 
 normative:
 
