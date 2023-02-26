@@ -34,6 +34,22 @@ author:
     fullname: Michael Ackermann
     organization: BCBS Michigan
     email: "mackermann@bcbsm.com"
+ -
+    fullname: Ameya Deshpande
+    organization: NITK Surathkal/Google
+    email: "ameyanrd@gmail.com"
+ -
+    fullname: Tommaso Pecorella
+    organization: University of Florence
+    email: "tommaso.pecorella@unifi.it"
+ -
+    fullname: Tommaso Pecorella
+    organization: University of Florence
+    email: "tommaso.pecorella@unifi.it"
+ -
+    fullname: Adnan Rashid
+    organization: Politecnico di Bari
+    email: "adnan.rashid@poliba.it"
 
 normative:
 
