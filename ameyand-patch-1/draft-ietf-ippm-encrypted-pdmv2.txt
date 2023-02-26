@@ -83,7 +83,7 @@ Table of Contents
    1.  Introduction
      1.1.  Current Performance and Diagnostic Metrics (PDM)
      1.2.  PDMv2 Introduction
-   2.  Conventions and Definitions
+   2.  Conventions used in this document
    3.  Terminology
    4.  Protocol Flow
      4.1.  Registration Phase
@@ -125,8 +125,6 @@ Table of Contents
 
    PDMv2 adds confidentiality, integrity and authentication to PDM.
 
-   PDMv2 adds confidentiality, integrity and authentication to PDM.
-
    PDMv2 consists of three kinds of flows:
 
    *  Primary to Primary
@@ -142,7 +140,7 @@ Table of Contents
    security requirements.  The Primary to Primary and Primary to
    Secondary protocol will be described in a subsequent document.
 
-2.  Conventions and Definitions
+2.  Conventions used in this document
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
@@ -192,12 +190,12 @@ Table of Contents
 
    The protocol will proceed in 3 steps.
 
-   Step 1: Negotiation between Primary Server and Primary Client.
+   R(1)  Negotiation between Primary Server and Primary Client.
 
-   Step 2: Registration between Primary Server / Client and Secondary
-   Server / Client
+   R(2)  Registration between Primary Server / Client and Secondary
+         Server / Client
 
-   Step 3: PDM data flow between Secondary Client and Secondary Server
+   R(3)  PDM data flow between Secondary Client and Secondary Server
 
    After-the-fact (or real-time) data analysis of PDM flow may occur by
    network diagnosticians or network devices.  The definition of how
