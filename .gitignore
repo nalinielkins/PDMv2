@@ -17,7 +17,7 @@
 /versioned/
 Gemfile.lock
 archive.json
-draft-elkins-ippm-encrypted-pdmv2.xml
+draft-ietf-ippm-encrypted-pdmv2.xml
 package-lock.json
 report.xml
 !requirements.txt
