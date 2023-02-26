@@ -1,17 +1,17 @@
 # IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option
 
-This is the working area for the individual Internet-Draft, "IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option".
+This is the working area for the IETF [IPPM Working Group](https://datatracker.ietf.org/wg/ippm/documents/) Internet-Draft, "IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination Option".
 
-* [Editor's Copy](https://ameyand.github.io/PDMv2/#go.draft-elkins-ippm-encrypted-pdmv2.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-elkins-ippm-encrypted-pdmv2)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-elkins-ippm-encrypted-pdmv2)
-* [Compare Editor's Copy to Individual Draft](https://ameyand.github.io/PDMv2/#go.draft-elkins-ippm-encrypted-pdmv2.diff)
+* [Editor's Copy](https://ameyand.github.io/PDMv2/#go.draft-ietf-ippm-encrypted-pdmv2.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-ippm-encrypted-pdmv2)
+* [Working Group Draft](https://datatracker.ietf.org/doc/html/draft-ietf-ippm-encrypted-pdmv2)
+* [Compare Editor's Copy to Working Group Draft](https://ameyand.github.io/PDMv2/#go.draft-ietf-ippm-encrypted-pdmv2.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/ameyand/PDMv2/blob//CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ameyand/PDMv2/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
