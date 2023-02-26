@@ -471,6 +471,16 @@ Table of Contents
    | Encrypted PDM Data :  (30 bytes) | +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ ~~~
 
+      Option Type
+
+      Option Length
+
+      Version Number
+
+      Reserved Bits
+
+      Random Number
+
 7.  Security Considerations
 
    TODO Security
