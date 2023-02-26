@@ -5,8 +5,15 @@
 IP Performance Measurement                                     N. Elkins
 Internet-Draft                                     Inside Products, Inc.
 Intended status: Informational                              M. Ackermann
-Expires: 29 August 2023                                    BCBS Michigan
-                                                        25 February 2023
+Expires: 30 August 2023                                    BCBS Michigan
+                                                            A. Deshpande
+                                                   NITK Surathkal/Google
+                                                            T. Pecorella
+                                                            T. Pecorella
+                                                  University of Florence
+                                                               A. Rashid
+                                                     Politecnico di Bari
+                                                        26 February 2023
 
 
  IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination
@@ -49,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 29 August 2023.
+   This Internet-Draft will expire on 30 August 2023.
 
 Copyright Notice
 
@@ -120,3 +127,23 @@ Authors' Addresses
    Michael Ackermann
    BCBS Michigan
    Email: mackermann@bcbsm.com
+
+
+   Ameya Deshpande
+   NITK Surathkal/Google
+   Email: ameyanrd@gmail.com
+
+
+   Tommaso Pecorella
+   University of Florence
+   Email: tommaso.pecorella@unifi.it
+
+
+   Tommaso Pecorella
+   University of Florence
+   Email: tommaso.pecorella@unifi.it
+
+
+   Adnan Rashid
+   Politecnico di Bari
+   Email: adnan.rashid@poliba.it
