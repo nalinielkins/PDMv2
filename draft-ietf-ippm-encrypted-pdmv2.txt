@@ -17,7 +17,7 @@ Expires: 30 August 2023                                    BCBS Michigan
 
  IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination
                                  Option
-                draft-elkins-ippm-encrypted-pdmv2-latest
+                 draft-ietf-ippm-encrypted-pdmv2-latest
 
 Abstract
 
@@ -37,7 +37,7 @@ About This Document
    The latest revision of this draft can be found at
    https://ameyand.github.io/PDMv2/draft-elkins-ippm-encrypted-
    pdmv2.html.  Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-elkins-ippm-encrypted-pdmv2/.
+   https://datatracker.ietf.org/doc/draft-ietf-ippm-encrypted-pdmv2/.
 
    Discussion of this document takes place on the IP Performance
    Measurement Working Group mailing list (mailto:ippm@ietf.org), which
