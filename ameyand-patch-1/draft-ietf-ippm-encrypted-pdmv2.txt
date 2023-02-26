@@ -9,7 +9,6 @@ Expires: 30 August 2023                                    BCBS Michigan
                                                             A. Deshpande
                                                    NITK Surathkal/Google
                                                             T. Pecorella
-                                                            T. Pecorella
                                                   University of Florence
                                                                A. Rashid
                                                      Politecnico di Bari
@@ -18,11 +17,18 @@ Expires: 30 August 2023                                    BCBS Michigan
 
  IPv6 Performance and Diagnostic Metrics Version 2 (PDMv2) Destination
                                  Option
-                draft-elkins-ippm-encrypted-pdmv2-latest
+                 draft-ietf-ippm-encrypted-pdmv2-latest
 
 Abstract
 
-   TODO Abstract
+   RFC8250 describes an optional Destination Option (DO) header embedded
+   in each packet to provide sequence numbers and timing information as
+   a basis for measurements.  As this data is sent in clear- text, this
+   may create an opportunity for malicious actors to get information for
+   subsequent attacks.  This document defines PDMv2 which has a
+   lightweight handshake (registration procedure) and encryption to
+   secure this data.  Additional performance metrics which may be of use
+   are also defined.
 
 About This Document
 
@@ -31,7 +37,7 @@ About This Document
    The latest revision of this draft can be found at
    https://ameyand.github.io/PDMv2/draft-elkins-ippm-encrypted-
    pdmv2.html.  Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-elkins-ippm-encrypted-pdmv2/.
+   https://datatracker.ietf.org/doc/draft-ietf-ippm-encrypted-pdmv2/.
 
    Discussion of this document takes place on the IP Performance
    Measurement Working Group mailing list (mailto:ippm@ietf.org), which
@@ -75,16 +81,43 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
+     1.1.  Current Performance and Diagnostic Metrics (PDM)
+     1.2.  PDMv2 Introduction
    2.  Conventions and Definitions
-   3.  Security Considerations
-   4.  IANA Considerations
-   5.  Normative References
+   3.  Terminology
+   4.  Security Considerations
+   5.  IANA Considerations
+   6.  Normative References
    Acknowledgments
    Authors' Addresses
 
 1.  Introduction
 
-   TODO Introduction
+1.1.  Current Performance and Diagnostic Metrics (PDM)
+
+   The current PDM is an IPv6 Destination Options header which provides
+   information based on the metrics like Round-trip delay and Server
+   delay.  This information helps to measure the Quality of Service
+   (QoS) and to assist in diagnostics.  However, there are potential
+   risks involved transmitting PDM data during a diagnostics session.
+
+   PDM metrics can help an attacker understand about the type of machine
+   and its processing capabilities.  Inferring from the PDM data, the
+   attack can launch a timing attack.  For example, if a cryptographic
+   protocol is used, a timing attack may be launched against the keying
+   material to obtain the secret.
+
+   Along with this, PDM does not provide integrity.  It is possible for
+   a Man-In-The-Middle (MITM) node to modify PDM headers leading to
+   incorrect conclusions.  For example, during the debugging process
+   using PDM header, it can mislead the person showing there are no
+   unusual server delays.
+
+1.2.  PDMv2 Introduction
+
+   PDMv2 introduces confidential, integrity and authentication.
+
+   TBD
 
 2.  Conventions and Definitions
 
@@ -94,15 +127,53 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Security Considerations
+3.  Terminology
+
+   *  Primary (Writer) Client (WC): An authoritative node that creates
+      cryptographic keys for multiple reader clients.
+
+   *  Primary (Writer) Server (WS): An authoritative node that creates
+      cryptographic keys for multiple reader servers.
+
+   *  Secondary (Reader) Client (RC): An endpoint node which initiates a
+      session with a listening port and sends PDM data.  Connects to the
+      Primary (Writer) Client to get cryptographic key material.
+
+   *  Secondary (Reader) Server (RS): An endpoint node which has a
+      listening port and sends PDM data.  Connects to the Primary
+      (Writer) Server to get cryptographic key material.
+
+   Note: a client may act as a server (have listening ports).
+
+   *  Symmetric Key (K): A uniformly random bitstring as an input to the
+      encryption algorithm, known only to Secondary (Reader) Clients and
+      Secondary (Reader) Servers, to establish a secure communication.
+
+   *  Public and Private Keys: A pair of keys that is used in asymmetric
+      cryptography.  If one is used for encryption, the other is used
+      for decryption.  Private Keys are kept hidden by the source of the
+      key pair generator, but Public Key is known to everyone.  pkX
+      (Public Key) and skX (Private Key).  Where X can be, any client or
+      any server.
+
+   *  Pre-shared Key (PSK): A symmetric key.  Uniformly random
+      bitstring, shared between any client or any server or a key shared
+      between an entity that forms client-server relationship.  This
+      could happen through an out-of band mechanism: e.g., a physical
+      meeting or use of another protocol.
+
+   *  Session Key: A temporary key which acts as a symmetric key for the
+      whole session.
+
+4.  Security Considerations
 
    TODO Security
 
-4.  IANA Considerations
+5.  IANA Considerations
 
    This document has no IANA actions.
 
-5.  Normative References
+6.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -132,11 +203,6 @@ Authors' Addresses
    Ameya Deshpande
    NITK Surathkal/Google
    Email: ameyanrd@gmail.com
-
-
-   Tommaso Pecorella
-   University of Florence
-   Email: tommaso.pecorella@unifi.it
 
 
    Tommaso Pecorella
