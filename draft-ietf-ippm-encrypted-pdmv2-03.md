@@ -16,7 +16,7 @@ keyword:
  - IPv6
  - PDMv2
  - Performance
- - Diagnostic
+ - Diagnostics
 venue:
   group: "IP Performance Measurement"
   type: "Working Group"
